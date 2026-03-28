@@ -1,330 +1,327 @@
-# 📝 Python Basic Exams Collection
+# 📝 Colección de Exámenes Básicos de Python
 
-A collection of **4 fundamental Python programming exams** that demonstrate core programming concepts including loops, functions, input validation, and data processing. These exams were completed as part of the programming fundamentals course at **CBTis No. 128**.
-
----
-
-## 👨‍🎓 Student Information
-
-- **Student:** Magallanes López Carlos Gabriel
-- **Email:** cgmagallanes23@gmail.com
-- **School:** Centro de Bachillerato Tecnológico Industrial y de Servicios No. 128
-- **Completion Dates:** October 22-27, 2025
+Una colección de **4 exámenes fundamentales de programación en Python** que demuestran conceptos básicos de programación, incluyendo bucles, funciones, validación de entrada y procesamiento de datos.
 
 ---
 
-## 📋 Project Contents
+## 👨‍🎓 Información del Desarrollador
 
-This repository contains 4 progressively challenging Python exams that cover essential programming fundamentals:
-
-### 📌 Exam 1: School Charity Raffle
-**Date:** October 22, 2025
-
-A raffle program that selects a winner from 5 participants based on academic performance and random number matching.
-
-**Features:**
-- Student eligibility verification (minimum 9.0 GPA)
-- Random number generation and matching
-- Input validation for grades (1-10 range)
-- Lucky number validation (1-10 range)
-- Winner announcement with string concatenation
-
-**Concepts Covered:**
-- `while` loops with `break` statements
-- Random number generation
-- Conditional logic
-- Input validation
-- String formatting with `%` operator
+- **Estudiante:** Magallanes López Carlos Gabriel
+- **Correo electrónico:** cgmagallanes23@gmail.com
+- **Fecha de desarrollo:** 22-27 de octubre de 2025
 
 ---
 
-### 📌 Exam 2: Store Inventory Management
-**Date:** October 23, 2025
+## 📋 Contenido del Proyecto
 
-An inventory system that tracks 10 products and calculates the average cost per product from supplier.
+Este repositorio contiene 4 exámenes de Python con dificultad progresiva que cubren los fundamentos esenciales de la programación:
 
-**Features:**
-- Product registration (name, public price, supplier cost, quantity)
-- Total acquisition cost calculation
-- Average cost per product computation
-- Input validation for prices and quantities
-- Function with return value
+### 📌 Examen 1: Rifa Escolar de Caridad
+**Fecha:** 22 de octubre de 2025
 
-**Concepts Covered:**
-- `for` loops
-- Functions with return values
-- Accumulator variables
-- Input validation
-- F-string formatting
-- Rounding decimal numbers
+Un programa de rifa que selecciona a un ganador entre 5 participantes en función de su rendimiento académico y la coincidencia de un número aleatorio.
 
----
+**Características:**
+- Verificación de elegibilidad del estudiante (promedio mínimo de 9.0)
+- Generación y comparación de números aleatorios
+- Validación de calificaciones (rango 1-10)
+- Validación del número de la suerte (rango 1-10)
+- Anuncio del ganador con concatenación de cadenas
 
-### 📌 Exam 3: Weekly Coffee Shop Sales Control
-**Date:** October 27, 2025
-
-A sales tracking system for a coffee shop that registers daily sales for 7 days and calculates average daily income.
-
-**Features:**
-- Daily sales registration (coffee and desserts)
-- Quantity and price tracking
-- Total weekly income calculation
-- Average daily income computation
-- Input validation for quantities and minimum prices
-
-**Concepts Covered:**
-- `for` loops
-- Functions with return values
-- Multiple data tracking
-- Input validation with specific price ranges
-- `.format()` string formatting
-- Mathematical calculations
+**Conceptos Cubiertos:**
+- Bucles `while` con sentencias `break`
+- Generación de números aleatorios
+- Lógica condicional
+- Validación de entrada
+- Formateo de cadenas con el operador `%`
 
 ---
 
-### 📌 Exam 4: Weekly Exercise Tracker
-**Date:** October 27, 2025
+### 📌 Examen 2: Gestión de Inventario de una Tienda
+**Fecha:** 23 de octubre de 2025
 
-A fitness tracking program that records 3 exercise sessions and displays a comprehensive summary.
+Un sistema de inventario que registra 10 productos y calcula el costo promedio por producto del proveedor.
 
-**Features:**
-- Exercise session registration (type, duration, calories)
-- Exercise type validation (Cardio/Strength/Resistance)
-- Total minutes and calories tracking
-- Average calories per session calculation
-- Formatted summary display
+**Características:**
+- Registro de productos (nombre, precio público, costo de proveedor, cantidad)
+- Cálculo del costo total de adquisición
+- Cómputo del costo promedio por producto
+- Validación de entrada para precios y cantidades
+- Función con valor de retorno
 
-**Concepts Covered:**
-- `while` loops with counters
-- Functions without return (void functions)
-- Multiple conditional validations
-- String validation
-- F-string formatting
-- Statistical calculations
-
----
-
-## 🎯 Learning Objectives
-
-These exams comprehensively cover fundamental Python programming concepts:
-
-- ✅ **Loop Control**: `while` and `for` loops with proper iteration
-- ✅ **Conditional Logic**: `if-elif-else` statements and nested conditions
-- ✅ **Input Validation**: Comprehensive data verification with error handling
-- ✅ **Functions**: Both return and void functions
-- ✅ **Random Numbers**: Using `random` module for number generation
-- ✅ **String Formatting**: `%`, `.format()`, and f-strings
-- ✅ **Mathematical Operations**: Averages, totals, and rounding
-- ✅ **Accumulator Pattern**: Tracking sums and counts
-- ✅ **Data Type Conversion**: `int()`, `float()`, `str()`
-- ✅ **Control Flow**: `break` statements and loop counters
+**Conceptos Cubiertos:**
+- Bucles `for`
+- Funciones con valores de retorno
+- Variables acumuladoras
+- Validación de entrada
+- Formateo con f-strings
+- Redondeo de números decimales
 
 ---
 
-## 📦 Requirements
+### 📌 Examen 3: Control de Ventas Semanal de una Cafetería
+**Fecha:** 27 de octubre de 2025
+
+Un sistema de seguimiento de ventas para una cafetería que registra las ventas diarias durante 7 días y calcula el ingreso diario promedio.
+
+**Características:**
+- Registro de ventas diarias (café y postres)
+- Seguimiento de cantidad y precio
+- Cálculo del ingreso semanal total
+- Cómputo del ingreso diario promedio
+- Validación de cantidades y precios mínimos
+
+**Conceptos Cubiertos:**
+- Bucles `for`
+- Funciones con valores de retorno
+- Seguimiento de múltiples datos
+- Validación de entrada con rangos de precios específicos
+- Formateo de cadenas con `.format()`
+- Cálculos matemáticos
+
+---
+
+### 📌 Examen 4: Rastreador Semanal de Ejercicios
+**Fecha:** 27 de octubre de 2025
+
+Un programa de seguimiento físico que registra 3 sesiones de ejercicio y muestra un resumen completo.
+
+**Características:**
+- Registro de sesiones de ejercicio (tipo, duración, calorías)
+- Validación del tipo de ejercicio (Cardio/Fuerza/Resistencia)
+- Seguimiento del total de minutos y calorías
+- Cálculo de calorías promedio por sesión
+- Visualización del resumen con formato
+
+**Conceptos Cubiertos:**
+- Bucles `while` con contadores
+- Funciones sin retorno (funciones void)
+- Múltiples validaciones condicionales
+- Validación de cadenas
+- Formateo con f-strings
+- Cálculos estadísticos
+
+---
+
+## 🎯 Objetivos de Aprendizaje
+
+Estos exámenes cubren de forma integral los conceptos fundamentales de programación en Python:
+
+- ✅ **Control de Bucles**: Bucles `while` y `for` con iteración correcta
+- ✅ **Lógica Condicional**: Sentencias `if-elif-else` y condiciones anidadas
+- ✅ **Validación de Entrada**: Verificación de datos con manejo de errores
+- ✅ **Funciones**: Funciones con retorno y funciones void
+- ✅ **Números Aleatorios**: Uso del módulo `random` para generación de números
+- ✅ **Formateo de Cadenas**: `%`, `.format()` y f-strings
+- ✅ **Operaciones Matemáticas**: Promedios, totales y redondeo
+- ✅ **Patrón Acumulador**: Seguimiento de sumas y conteos
+- ✅ **Conversión de Tipos**: `int()`, `float()`, `str()`
+- ✅ **Flujo de Control**: Sentencias `break` y contadores de bucle
+
+---
+
+## 📦 Requisitos
 
 ```bash
 Python 3.x
-random module (included in standard library)
+módulo random (incluido en la librería estándar)
 ```
 
 ---
 
-## ▶️ How to Run
+## ▶️ Cómo Ejecutar
 
-1. **Clone this repository**:
+1. **Clona este repositorio**:
 ```bash
-git clone https://github.com/yourusername/python-basic-exams.git
-cd python-basic-exams
+git clone https://github.com/TheNarratorVIMMXX/PythonBasicExams.git
+cd PythonBasicExams
 ```
 
-2. **Run any exam**:
+2. **Ejecuta cualquier examen**:
 ```bash
-python Ex_1.py  # School Charity Raffle
-python Ex_2.py  # Store Inventory Management
-python Ex_3.py  # Coffee Shop Sales Control
-python Ex_4.py  # Weekly Exercise Tracker
+python Examen_1.py  # Rifa Escolar de Caridad
+python Examen_2.py  # Gestión de Inventario de una Tienda
+python Examen_3.py  # Control de Ventas de Cafetería
+python Examen_4.py  # Rastreador Semanal de Ejercicios
 ```
 
 ---
 
-## 🔍 Validation Rules
+## 🔍 Reglas de Validación
 
-### Exam 1 Validations:
-- ✅ Grades: Range 1-10
-- ✅ Lucky number: Range 1-10
-- ✅ GPA requirement: ≥ 9.0
+### Validaciones del Examen 1:
+- ✅ Calificaciones: Rango 1-10
+- ✅ Número de la suerte: Rango 1-10
+- ✅ Promedio requerido: ≥ 9.0
 
-### Exam 2 Validations:
-- ✅ Public price: ≥ $0.50
-- ✅ Supplier cost: ≥ $0.50
-- ✅ Product quantity: ≥ 1
+### Validaciones del Examen 2:
+- ✅ Precio público: ≥ $0.50
+- ✅ Costo del proveedor: ≥ $0.50
+- ✅ Cantidad del producto: ≥ 1
 
-### Exam 3 Validations:
-- ✅ Coffee quantity: ≥ 0
-- ✅ Coffee price: ≥ $15.00
-- ✅ Dessert quantity: ≥ 0
-- ✅ Dessert price: ≥ $25.00
+### Validaciones del Examen 3:
+- ✅ Cantidad de café: ≥ 0
+- ✅ Precio del café: ≥ $15.00
+- ✅ Cantidad de postres: ≥ 0
+- ✅ Precio de postres: ≥ $25.00
 
-### Exam 4 Validations:
-- ✅ Exercise duration: > 0 minutes
-- ✅ Calories burned: > 0
-- ✅ Exercise type: Must be "Cardio", "Fuerza", or "Resistencia"
-
----
-
-## 📚 Learning Outcomes
-
-This collection serves as an educational resource for understanding fundamental Python programming:
-
-### 🎓 What You'll Learn
-
-1. **Loop Mastery**
-   - `while` loops with conditions
-   - `for` loops with range()
-   - Loop counters and control variables
-   - Breaking out of loops
-   - Nested loop structures
-
-2. **Input Validation Techniques**
-   - Range checking (numeric values)
-   - String validation (specific options)
-   - Re-prompting on invalid input
-   - Error message display
-   - Data type conversion safety
-
-3. **Function Design**
-   - Functions with return values
-   - Void functions (procedures)
-   - Parameter passing
-   - Function documentation
-   - Type hints usage
-
-4. **Mathematical Operations**
-   - Sum accumulation
-   - Average calculation
-   - Rounding decimals
-   - Multiplication and division
-   - Percentage calculations
-
-5. **String Formatting**
-   - Old-style `%` formatting
-   - `.format()` method
-   - F-strings (formatted string literals)
-   - Concatenation techniques
-   - Output formatting
-
-6. **Control Flow Patterns**
-   - Conditional execution
-   - Multiple conditions (`and`, `or`)
-   - Nested conditionals
-   - Loop exit strategies
-   - Program state management
-
-7. **Random Number Generation**
-   - `random.randint()` usage
-   - Range specification
-   - Random selection logic
-   - Probability concepts
-
-8. **Data Accumulation**
-   - Running totals
-   - Counter variables
-   - Aggregation patterns
-   - Statistical calculations
-
-9. **Program Organization**
-   - Clear documentation
-   - Logical flow structure
-   - Variable naming conventions
-   - Code readability
-   - Comment best practices
-
-10. **Error Handling**
-    - Input validation loops
-    - User feedback messages
-    - Graceful error recovery
-    - Edge case handling
+### Validaciones del Examen 4:
+- ✅ Duración del ejercicio: > 0 minutos
+- ✅ Calorías quemadas: > 0
+- ✅ Tipo de ejercicio: Debe ser "Cardio", "Fuerza" o "Resistencia"
 
 ---
 
-### 🎯 Skills Developed
+## 📚 Resultados de Aprendizaje
 
-By studying and practicing with these exams, you will gain hands-on experience with:
+Esta colección sirve como recurso educativo para comprender los fundamentos de la programación en Python:
 
-✅ **Iterative programming** with loops and counters  
-✅ **Data validation** and input sanitization  
-✅ **Function decomposition** for code reusability  
-✅ **Mathematical problem-solving** in programming  
-✅ **String manipulation** and formatting techniques  
-✅ **Algorithmic thinking** for business logic  
-✅ **Code documentation** and professional standards  
+### 🎓 Lo que Aprenderás
 
-This repository is perfect for students learning Python fundamentals, preparing for programming exams, or anyone wanting to understand essential programming patterns through practical exercises.
+1. **Dominio de Bucles**
+   - Bucles `while` con condiciones
+   - Bucles `for` con `range()`
+   - Contadores y variables de control
+   - Salida de bucles con `break`
+   - Estructuras de bucles anidados
 
----
+2. **Técnicas de Validación de Entrada**
+   - Verificación de rangos (valores numéricos)
+   - Validación de cadenas (opciones específicas)
+   - Solicitud repetida ante entrada inválida
+   - Visualización de mensajes de error
+   - Conversión segura de tipos de datos
 
-## 📊 Exam Comparison Table
+3. **Diseño de Funciones**
+   - Funciones con valores de retorno
+   - Funciones void (procedimientos)
+   - Paso de parámetros
+   - Documentación de funciones
+   - Uso de anotaciones de tipo
 
-| Exam | Loop Type | Function Type | Validation Count | Output Format | Difficulty |
-|------|-----------|---------------|------------------|---------------|------------|
-| 1 - Raffle | `while` + `break` | None | 4 validations | `%` operator | ⭐⭐ |
-| 2 - Inventory | `for` | Return value | 3 validations | F-string | ⭐⭐⭐ |
-| 3 - Coffee Shop | `for` | Return value | 4 validations | `.format()` | ⭐⭐⭐ |
-| 4 - Exercise | `while` | Void function | 3 validations | F-string | ⭐⭐⭐⭐ |
+4. **Operaciones Matemáticas**
+   - Acumulación de sumas
+   - Cálculo de promedios
+   - Redondeo de decimales
+   - Multiplicación y división
+   - Cálculos de porcentajes
 
----
+5. **Formateo de Cadenas**
+   - Formateo con `%` (estilo antiguo)
+   - Método `.format()`
+   - F-strings (literales de cadena formateados)
+   - Técnicas de concatenación
+   - Formateo de salida
 
-## 🔮 Practice Suggestions
+6. **Patrones de Flujo de Control**
+   - Ejecución condicional
+   - Condiciones múltiples (`and`, `or`)
+   - Condicionales anidados
+   - Estrategias de salida de bucles
+   - Gestión del estado del programa
 
-### For Beginners:
-1. Start with Exam 1 to understand basic loops and conditionals
-2. Move to Exam 2 to learn functions with return values
-3. Practice Exam 3 to master multiple data tracking
-4. Challenge yourself with Exam 4 for advanced validation
+7. **Generación de Números Aleatorios**
+   - Uso de `random.randint()`
+   - Especificación de rangos
+   - Lógica de selección aleatoria
+   - Conceptos de probabilidad
 
-### For Intermediate Learners:
-1. Modify the programs to add new features
-2. Combine concepts from multiple exams
-3. Add error handling with try-except
-4. Create GUI versions using Tkinter
+8. **Acumulación de Datos**
+   - Totales acumulados
+   - Variables contadoras
+   - Patrones de agregación
+   - Cálculos estadísticos
 
-### Enhancement Ideas:
-- [ ] Add data persistence (save to file)
-- [ ] Create classes for better organization
-- [ ] Implement unit tests
-- [ ] Add command-line arguments
-- [ ] Create database integration
-- [ ] Build GUI interfaces
-- [ ] Add data export (CSV, JSON)
+9. **Organización del Programa**
+   - Documentación clara
+   - Estructura lógica del flujo
+   - Convenciones de nomenclatura de variables
+   - Legibilidad del código
+   - Buenas prácticas de comentarios
 
----
-
-## 📄 License
-
-This project is educational in nature and available for free use for learning purposes.
-
----
-
-## 🤝 Contributing
-
-Students and educators are welcome to:
-- Report issues or bugs
-- Suggest improvements
-- Share alternative solutions
-- Create additional practice problems
-- Translate to other languages
-
----
-
-## 📧 Contact
-
-**Carlos Gabriel Magallanes López**  
-Email: cgmagallanes23@gmail.com  
-School: CBTis No. 128
+10. **Manejo de Errores**
+    - Bucles de validación de entrada
+    - Mensajes de retroalimentación al usuario
+    - Recuperación elegante de errores
+    - Manejo de casos límite
 
 ---
 
-**⭐ If these exams helped you learn Python fundamentals, please give this repository a star!**
+### 🎯 Habilidades Desarrolladas
 
-**📖 Happy Learning and Good Luck with Your Studies!**
+Al estudiar y practicar con estos exámenes, adquirirás experiencia práctica en:
+
+✅ **Programación iterativa** con bucles y contadores
+✅ **Validación de datos** y saneamiento de entradas
+✅ **Descomposición en funciones** para reutilización del código
+✅ **Resolución de problemas matemáticos** en programación
+✅ **Manipulación y formateo de cadenas**
+✅ **Pensamiento algorítmico** para lógica de negocio
+
+Este repositorio es ideal para estudiantes que aprenden los fundamentos de Python, que se preparan para exámenes de programación o para cualquier persona que quiera entender patrones esenciales de programación mediante ejercicios prácticos.
+
+---
+
+## 📊 Tabla Comparativa de Exámenes
+
+| Examen | Tipo de Bucle | Tipo de Función | Validaciones | Formato de Salida | Dificultad |
+|--------|---------------|-----------------|--------------|-------------------|------------|
+| 1 - Rifa | `while` + `break` | Ninguna | 4 validaciones | Operador `%` | ⭐⭐ |
+| 2 - Inventario | `for` | Con retorno | 3 validaciones | F-string | ⭐⭐⭐ |
+| 3 - Cafetería | `for` | Con retorno | 4 validaciones | `.format()` | ⭐⭐⭐ |
+| 4 - Ejercicio | `while` | void | 3 validaciones | F-string | ⭐⭐⭐⭐ |
+
+---
+
+## 🔮 Sugerencias de Práctica
+
+### Para Principiantes:
+1. Comienza con el Examen 1 para entender bucles básicos y condicionales
+2. Pasa al Examen 2 para aprender funciones con valores de retorno
+3. Practica el Examen 3 para dominar el seguimiento de múltiples datos
+4. Desafíate con el Examen 4 para validaciones avanzadas
+
+### Para Estudiantes Intermedios:
+1. Modifica los programas para agregar nuevas funcionalidades
+2. Combina conceptos de varios exámenes
+3. Agrega manejo de errores con `try-except`
+4. Crea versiones con interfaz gráfica usando Tkinter
+
+### Ideas de Mejora:
+- [ ] Agregar persistencia de datos (guardar en archivo)
+- [ ] Crear clases para mejor organización
+- [ ] Implementar pruebas unitarias
+- [ ] Agregar argumentos de línea de comandos
+- [ ] Crear integración con base de datos
+- [ ] Construir interfaces gráficas
+- [ ] Agregar exportación de datos (CSV, JSON)
+
+---
+
+## 📄 Licencia
+
+Este proyecto tiene carácter educativo y está disponible de forma gratuita para fines de aprendizaje.
+
+---
+
+## 🤝 Contribuciones
+
+Estudiantes y docentes son bienvenidos a:
+- Reportar problemas o errores
+- Sugerir mejoras
+- Compartir soluciones alternativas
+- Crear problemas de práctica adicionales
+- Traducir a otros idiomas
+
+---
+
+## 📧 Contacto
+
+**Carlos Gabriel Magallanes López**
+Correo electrónico: cgmagallanes23@gmail.com
+
+---
+
+**⭐ ¡Si estos exámenes te ayudaron a aprender los fundamentos de Python, dale una estrella a este repositorio!**
+
+**📖 ¡Feliz aprendizaje y mucho éxito en tus estudios!**
