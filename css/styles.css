@@ -1,0 +1,717 @@
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/*                                                                  Estilos para el Proyecto Python Basic Exams                                                             */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/* Autor: Magallanes López Carlos Gabriel                                                                                                                                    */
+/* Versión del Proyecto: 1.0                                                                                                                                                 */
+/* Correo: cgmagallanes23@gmail.com                                                                                                                                          */
+/* Ultima Modificación: 30/03/2025                                                                                                                                           */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+
+
+/* Propiedades Custom para HTML */
+:root {
+
+    --navy: #0d1b2a;
+    --navy-mid: #132236;
+    --navy-light: #1e3351;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --cream: #f5f0e8;
+    --cream-dark: #ede7d9;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --green: #2d6a4f;
+    --green-light: #40916c;
+
+}
+
+/* Reset del Selector Global y sus PseudoElementos */
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Aplicamos comportamiento de scroll suave a toda la página */
+html {scroll-behavior: smooth;}
+
+/* Estilo para el Body */
+body {
+
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  
+}
+
+/* Estilo para el Encabezado y sus PseudoElementos */
+header {
+
+    background: var(--navy);
+    color: var(--cream);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* PseudoElemento para el patrón de rayas sutiles en el fondo del encabezado */
+header::before {
+
+    content: '';
+    position: absolute;
+    inset: 0;                                                                                                                              /* Ocupa todo el espacio del header */
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(201, 168, 76, 0.08) 39px, rgba(201, 168, 76, 0.08) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(201, 168, 76, 0.05) 79px, rgba(201, 168, 76, 0.05) 80px);
+    pointer-events: none;                                                                                                                  /* Permite hacer clic a través del pseudoElemento */
+  
+}
+
+/* Contenido Interno del Encabezado */
+.header-inner {
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 32px 56px;
+    position: relative;
+    z-index: 1;                                                                                                                            /* Esté por encima del pseudoElemento de fondo */
+
+}
+
+/* Insignia o Etiqueta */
+.badge {
+
+    display: inline-block;                                                                                                                 /* En fila y con dimensiones de contenido */
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    animation: fadeIn 0.6s ease both;                                                                                                      /* Animación de Fade-In */ 
+
+}
+
+/* Estilos para el Título Principal y su Énfasis */
+h1 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--cream);
+    max-width: 700px;
+    animation: slideUp 0.7s ease both 0.1s;                                                                                                /* Animación de Desliz Arriba */
+
+}
+
+/* Énfasis dentro del Título Principal */
+h1 em {color: var(--gold); font-style: normal;}
+
+/* Subtítulo o Descripción debajo del Título Principal */
+.header-sub {
+    
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgba(245,240,232,0.65);
+    font-style: italic;
+    animation: slideUp 0.7s ease both 0.2s;                                                                                                /* Animación de Desliz Arriba con retraso */
+
+}
+
+/* Divisor decorativo debajo del título */
+.header-divider {
+   
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 28px 0;
+    animation: slideUp 0.7s ease both 0.3s;                                                                                                /* Animación de Desliz Arriba con retraso */
+  
+}
+
+/* Información del Desarrollador o Autor */
+.dev-info {
+    
+    display: flex;
+    flex-wrap: wrap;                                                                                                                       /* Elementos en siguiente línea, pantallas pequeñas */
+    gap: 24px;
+    animation: slideUp 0.7s ease both 0.35s;                                                                                               /* Animación de Desliz Arriba con retraso */
+  
+}
+
+/* Etiqueta o Chip para el Desarrollador */
+.dev-chip {
+    
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    color: rgba(245,240,232,0.7);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+/* Icono dentro del Chip del Desarrollador */
+.dev-chip span {color: var(--gold-light); font-weight: 600;}
+
+/* Barra de Navegación */
+nav {
+
+    background: var(--navy-mid);
+    border-bottom: 2px solid var(--gold);
+    position: sticky;                                                                                                                      /* Se queda fijo al hacer scroll */
+    top: 0;
+    z-index: 100;                                                                                                                          /* Encima de otros elementos en scroll */
+  
+}
+
+/* Contenido Interno de la Barra de Navegación */
+.nav-inner {
+    
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+
+}
+
+/* Links de Navegación */
+nav a {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    color: rgba(245,240,232,0.6);
+    text-decoration: none;
+    padding: 14px 20px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;                                                                                             /* Transición suave para hover */
+    white-space: nowrap;                                                                                                                   /* Evita enlaces se rompan en varias líneas */
+  
+}
+
+/* Estado Hover para los Links de Navegación */
+nav a:hover {color: var(--gold); border-color: var(--gold);}
+
+/* Sección Principal del Contenido */
+main {
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+
+}
+
+/* Etiqueta de Sección */
+.section-label {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    color: var(--gold);
+    margin-bottom: 12px;
+    margin-top: 64px;
+
+}
+
+/* Títulos de Sección */
+h2 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--cream-dark);
+
+}
+
+/* Subtítulos dentro de las Secciones */
+h3 {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+
+}
+
+/* Cuadricula de Tarjetas para los Exámenes */
+.exams-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);                                                                                                 /* 2 columnas iguales, se adaptan al ancho disponible */
+    gap: 24px;
+    margin-top: 8px;
+  
+}
+
+/* En pantallas pequeñas, cambiar a una sola columna la cuadrícula de tarjetas de exámenes para mejor legibilidad */
+@media (max-width: 640px) { .exams-grid { grid-template-columns: 1fr; } }
+
+/* Carta de Examen Individual */  
+.exam-card {
+    
+    background: white;
+    border: 1px solid var(--cream-dark);
+    border-top: 4px solid var(--navy);
+    padding: 28px 26px;
+    border-radius: 2px;
+    transition: transform 0.2s, box-shadow 0.2s;                                                                                           /* Transición suave para hover */
+    animation: fadeIn 0.5s ease both;                                                                                                      /* Animación de Fade-In para cada tarjeta, con retraso incremental en el HTML para efecto escalonado */
+
+}
+
+/* Colores de borde superior y retrasos de animación escalonados para cada tarjeta de examen */
+.exam-card:nth-child(1) {border-top-color: var(--navy); animation-delay: 0.05s;}                                                           /* Examen 1: Azul Marino, retraso de animación de 0.05s */
+.exam-card:nth-child(2) {border-top-color: var(--green); animation-delay: 0.1s;}                                                           /* Examen 2: Verde, retraso de animación de 0.1s */
+.exam-card:nth-child(3) {border-top-color: #7b2d8b; animation-delay: 0.15s;}                                                             /* Examen 3: Morado, retraso de animación de 0.15s */
+.exam-card:nth-child(4) {border-top-color: #b5451b; animation-delay: 0.2s;}                                                              /* Examen 4: Naranja, retraso de animación de 0.2s */
+
+/* Estado de Hover de la Tarjeta de Examen: Eleva ligeramente la tarjeta y agrega una sombra para dar un efecto de profundidad */
+.exam-card:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(13,27,42,0.12);
+  
+}
+
+/* Número o Código del Examen */
+.exam-number {
+    
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    color: var(--muted);
+    margin-bottom: 6px;
+  
+}
+
+/* Título del Examen */
+.exam-card h3 {
+
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  
+}
+
+/* Fecha del examen o información adicional */  
+.exam-date {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-style: normal;
+  
+}
+
+/* Descripción breve del examen o información adicional */
+.exam-card p {
+    
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  
+}
+
+/* Contenedor de Etiquetas o Tags para el examen */
+.tags {
+    
+    display: flex;
+    flex-wrap: wrap;                                                                                                                       /* Permite que las etiquetas se muevan a la siguiente línea si no caben en una sola */
+    gap: 6px;
+    margin-top: 4px;
+  
+}
+
+/* Etiquetas o Chips para los temas o conceptos relacionados con el examen */
+.tag {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10.5px;
+    background: var(--cream);
+    color: var(--navy);
+    border: 1px solid var(--cream-dark);
+    padding: 3px 9px;
+    border-radius: 2px;
+
+}
+
+/* Etiqueta de dificultad del examen */
+.difficulty {
+
+    font-size: 13px;
+    margin-top: 12px;
+    color: var(--muted);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11px;
+  
+}
+
+/* ID para la tabla de validación */
+#tabla {margin-top: 8px;}
+
+/* Contenedor para la tabla, con scroll horizontal en pantallas pequeñas */
+.table-wrap {overflow-x: auto;}
+
+/* Etiqueta de la tabla */
+table {
+
+    width: 100%;
+    border-collapse: collapse;                                                                                                             /* Elimina espacio entre bordes de celdas */
+    font-size: 0.88rem;
+    background: white;
+    border: 1px solid var(--cream-dark);
+  
+}
+
+/* Estilos para el encabezado de la tabla */
+thead {
+    
+    background: var(--navy);
+    color: var(--cream);
+  
+}
+
+/* Estilos para las celdas del encabezado de la tabla */
+thead th {
+    
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    padding: 14px 16px;
+    text-align: left;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  
+}
+
+/* Estilos para las filas del cuerpo de la tabla */
+tbody tr {
+
+    border-bottom: 1px solid var(--cream-dark);
+    transition: background 0.15s;                                                                                                          /* Transición suave (hover) de la fila */
+  
+}
+
+/* Estado Hover para las filas del cuerpo de la tabla: Cambia el fondo a un color crema claro para resaltar la fila */
+tbody tr:hover {background: var(--cream);}
+
+/* Estilos para las celdas del cuerpo de la tabla */
+tbody td {
+
+    padding: 13px 16px;
+    color: #333;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    border-right: 1px solid var(--cream-dark);
+    vertical-align: middle;                                                                                                                /* Alinea el contenido verticalmente al medio de la celda */
+  
+}
+
+/* Estilos específicos para la primera columna del cuerpo de la tabla, que contiene los nombres de los conceptos o temas */
+tbody td:first-child {
+
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--navy);
+  
+}
+
+/* Cuadrícula de Validación de Conceptos o Temas */
+.val-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  
+}
+
+/* En pantallas pequeñas, cambiar a una sola columna la cuadrícula de validación para mejor legibilidad */
+@media (max-width: 580px) {.val-grid { grid-template-columns: 1fr; }}
+
+/* Tarjeta o Bloque para cada concepto o tema dentro de la cuadrícula de validación */
+.val-block {
+
+    background: white;
+    border: 1px solid var(--cream-dark);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    border-radius: 0 2px 2px 0;
+  
+}
+
+/* Bloque de Título para cada concepto o tema dentro de la cuadrícula de validación */
+.val-block h4 {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas con espacio entre ellas */
+    color: var(--navy);
+    margin-bottom: 12px;
+  
+}
+
+/* Lista Desordenada dentro de cada bloque de validación */
+.val-block ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;                                                                                                                /* Elementos de la lista en columna */
+    gap: 6px;
+  
+}
+
+/* Elementos de la lista dentro de cada bloque de validación */
+.val-block li {
+    
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11.5px;
+    color: #444;
+    display: flex;
+    align-items: flex-start;                                                                                                               /* Alinea el texto al inicio del ícono de verificación */
+    gap: 8px;
+  
+}
+
+/* PseudoElemento para el ícono de verificación antes de cada elemento de la lista dentro de cada bloque de validación */
+.val-block li::before {
+    
+    content: '✓';
+    color: var(--green-light);
+    font-weight: 700;
+    flex-shrink: 0;                                                                                                                        /* Evita ícono reducido si texto largo */
+  
+}
+
+/* Cuadrícula de Conceptos */
+.concepts-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));                                                                          /* Columnas de mínimo 260px, se ajustan al espacio disponible */
+    gap: 16px;
+  
+}
+
+/* Bloque de Concepto Individual dentro de la cuadrícula de conceptos */  
+.concept-block {
+
+    background: white;
+    border: 1px solid var(--cream-dark);
+    padding: 22px 20px;
+    border-radius: 2px;
+  
+}
+
+/* Título del Concepto dentro de cada bloque de concepto */  
+.concept-block h4 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--cream-dark);
+  
+}
+
+/* Lista Desordenada dentro de cada bloque de concepto */
+.concept-block ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;                                                                                                                /* Elementos de la lista en columna */
+    gap: 5px;
+  
+}
+
+/* Elementos de la lista dentro de cada bloque de concepto */
+.concept-block li {
+
+    font-size: 0.82rem;
+    color: #555;
+    padding-left: 14px;
+    position: relative;
+  
+}
+
+/* PseudoElemento para el ícono de flecha antes de cada elemento de la lista dentro de cada bloque de concepto */  
+.concept-block li::before {
+    
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+  
+}
+
+/* Sección de Pasos para Correr el Examen o Proyecto */
+.run-steps {
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  
+}
+
+/* Paso Individual dentro de la sección de pasos para correr el examen o proyecto */
+.run-step {
+    
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;                                                                                                               /* Número paso al inicio contenido del paso */
+    background: white;
+    border: 1px solid var(--cream-dark);
+    padding: 20px 22px;
+    border-radius: 2px;
+  
+}
+
+/* Número de Paso dentro de cada paso individual, con estilo destacado para resaltar la secuencia de pasos */
+.step-num {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cream-dark);
+    line-height: 1;
+    flex-shrink: 0;                                                                                                                        /* Evita número paso reducido si contenido del paso es largo */
+    width: 32px;
+    text-align: center;
+  
+}
+
+/* Título o Descripción del Paso dentro de cada paso individual */
+.step-content h4 {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;                                                                                                             /* Letras mayúsculas para el título del paso */
+    letter-spacing: 0.08em;
+    color: var(--navy);
+    margin-bottom: 8px;
+  
+}
+
+/* Etiqueta HTML de código en línea para comandos o fragmentos de código dentro de la descripción del paso */
+code {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    background: var(--navy);
+    color: var(--gold-light);
+    padding: 2px 8px;
+    border-radius: 2px;
+    display: inline-block;                                                                                                                 /* Bloque en línea con dimensiones de contenido */
+    margin: 2px 0;
+
+}
+
+/* Bloque de código para comandos o fragmentos de código más largos dentro de la descripción del paso */
+.code-block {
+
+    background: var(--navy);
+    color: var(--gold-light);
+    padding: 16px 20px;
+    border-radius: 2px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12.5px;
+    line-height: 1.8;
+    margin-top: 10px;
+    overflow-x: auto;                                                                                                                      /* Permite desplazamiento horizontal si código muy ancho para contenedor */
+  
+}
+
+/* Comentarios o anotaciones dentro de los bloques de código, con un color más tenue para diferenciarlos del código ejecutable */
+.code-block .comment {color: rgba(245, 240, 232, 0.35);}
+
+/* Comandos o instrucciones dentro de los bloques de código, con un color más brillante para destacarlos visualmente */
+.code-block .cmd {color: #7dd3b8;}
+
+/* Pie de Página */
+footer {
+
+    background: var(--navy);
+    color: rgba(245,240,232,0.5);
+    text-align: center;
+    padding: 36px 32px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    border-top: 2px solid var(--gold);
+  
+}
+
+/* Estilo para el texto en negrita dentro del pie de página, como el nombre del autor o información destacada */
+footer strong {
+    
+    color: var(--gold);
+    font-weight: 600;
+  
+}
+
+/* Links dentro del pie de página, como enlaces a redes sociales o correo electrónico */  
+footer a {
+
+    color: var(--gold-light);
+    text-decoration: none;
+  
+}
+
+/* Subrayado al pasar el cursor sobre los links dentro del pie de página para indicar interactividad */
+footer a:hover {text-decoration: underline;}
+
+/* Animación de Fade-In para elementos que aparecen al cargar la página */
+@keyframes fadeIn {
+
+    from {opacity: 0; transform: translateY(8px);}
+    to   {opacity: 1; transform: translateY(0);}
+  
+}
+
+/* Animación de Desliz Arriba para elementos que aparecen al cargar la página */
+@keyframes slideUp {
+
+    from {opacity: 0; transform: translateY(16px);}
+    to   {opacity: 1; transform: translateY(0);}
+  
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {                                                                                                                /* Ajustes pantallas pequeñas, como móviles */
+
+    .header-inner {padding: 40px 20px 36px;}                                                                                               /* Menos padding en el encabezado para pantallas pequeñas */
+    main {padding: 0 20px 60px;}                                                                                                           /* Menos padding en el contenido principal para pantallas pequeñas */
+  
+}
+
+/*****************************************************************************************************************************************************************************/

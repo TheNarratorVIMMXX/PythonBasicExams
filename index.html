@@ -1,0 +1,322 @@
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- DOCUMENTACIÓN -->
+<!-- Vista para el Proyecto Python Basic Exams -->
+<!-- Ultima Modificación: 30/03/2025 -->
+<!-- Autor: Magallanes López Carlos Gabriel -->
+<!-- Correo: cgmagallanes23@gmail.com -->
+<!-- Versión: 1.0 -->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Vista del Proyecto-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                                                     <!-- Meta para responsividad -->
+        <title>Colección de Exámenes Básicos de Python</title>
+        <link              
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Code+Pro:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" 
+            rel="stylesheet"
+        >                                                                                                                                                                          <!-- Fuentes -->
+        <link  rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- Encabezado -->
+        <header>
+            <div class="header-inner">
+                <div class="badge">Programación en Python · Fundamentos</div>
+                <h1>Colección de <em>Exámenes</em> Básicos de Python</h1>
+                <p class="header-sub">4 exámenes progresivos que cubren los fundamentos esenciales de la programación</p>
+                <div class="header-divider"></div>
+                
+                <!-- Información del Desarrollador: 3 Datos-->
+                <div class="dev-info">
+                    <div class="dev-chip">👤 Desarrollador: <span>Magallanes López Carlos Gabriel</span></div>
+                    <div class="dev-chip">✉ <span>cgmagallanes23@gmail.com</span></div>
+                    <div class="dev-chip">📅 <span>22 – 27 de octubre de 2025</span></div>
+                </div>
+            
+            </div>
+        </header>
+
+        <!-- Barra de Navegación -->
+        <nav aria-label="Secciones">
+            <div class="nav-inner">
+                <a href="#examenes">Exámenes</a>
+                <a href="#tabla">Comparativa</a>
+                <a href="#validaciones">Validaciones</a>
+                <a href="#conceptos">Conceptos</a>
+                <a href="#ejecucion">Ejecución</a>
+            </div>
+        </nav>
+
+        <!-- Sección Principal -->
+        <main>
+
+            <!-- Exámenes -->
+            <div class="section-label" id="examenes">Contenido del proyecto</div>
+            <h2>Los Cuatro Exámenes</h2>
+
+            <!-- Cuadrícula de Examenes con 4 Cartas que contienen Número de Examen, Título, Fecha, Descripción y Etiquetas -->
+            <div class="exams-grid">
+                <div class="exam-card">
+                    <div class="exam-number">Examen 01</div>
+                    <h3>Rifa Escolar de Caridad</h3>
+                    <div class="exam-date">22 de octubre de 2025</div>
+                    <p>Selección de ganador entre 5 participantes basada en rendimiento académico y coincidencia de número aleatorio.</p>
+                    <div class="tags">
+                        <span class="tag">while + break</span>
+                        <span class="tag">random</span>
+                        <span class="tag">formato %</span>
+                        <span class="tag">condicionales</span>
+                    </div>
+                    <div class="difficulty">Dificultad: ⭐⭐</div>
+                </div>
+                <div class="exam-card">
+                    <div class="exam-number">Examen 02</div>
+                    <h3>Gestión de Inventario</h3>
+                    <div class="exam-date">23 de octubre de 2025</div>
+                    <p>Sistema de inventario que registra 10 productos y calcula el costo promedio por producto del proveedor.</p>
+                    <div class="tags">
+                        <span class="tag">for</span>
+                        <span class="tag">función con retorno</span>
+                        <span class="tag">f-strings</span>
+                        <span class="tag">acumulador</span>
+                    </div>
+                    <div class="difficulty">Dificultad: ⭐⭐⭐</div>
+                </div>
+                <div class="exam-card">
+                    <div class="exam-number">Examen 03</div>
+                    <h3>Control de Ventas de Cafetería</h3>
+                    <div class="exam-date">27 de octubre de 2025</div>
+                    <p>Seguimiento de ventas durante 7 días: registra cafés y postres, calcula ingreso semanal y promedio diario.</p>
+                    <div class="tags">
+                        <span class="tag">for</span>
+                        <span class="tag">función con retorno</span>
+                        <span class="tag">.format()</span>
+                        <span class="tag">múltiples datos</span>
+                    </div>
+                    <div class="difficulty">Dificultad: ⭐⭐⭐</div>
+                </div>
+                <div class="exam-card">
+                    <div class="exam-number">Examen 04</div>
+                    <h3>Rastreador Semanal de Ejercicios</h3>
+                    <div class="exam-date">27 de octubre de 2025</div>
+                    <p>Registra 3 sesiones de ejercicio (tipo, duración, calorías) y muestra un resumen completo con estadísticas.</p>
+                    <div class="tags">
+                        <span class="tag">while + contador</span>
+                        <span class="tag">función void</span>
+                        <span class="tag">f-strings</span>
+                        <span class="tag">validación cadenas</span>
+                    </div>
+                    <div class="difficulty">Dificultad: ⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Tabla Comparativa de Exámenes -->
+            <div class="section-label" id="tabla">Resumen</div>
+            <h2>Tabla Comparativa</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Examen</th>
+                            <th>Tipo de Bucle</th>
+                            <th>Tipo de Función</th>
+                            <th>Validaciones</th>
+                            <th>Formato de Salida</th>
+                            <th>Dificultad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 — Rifa</td>
+                            <td>while + break</td>
+                            <td>Ninguna</td>
+                            <td>4 validaciones</td>
+                            <td>Operador %</td>
+                            <td>⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>2 — Inventario</td>
+                            <td>for</td>
+                            <td>Con retorno</td>
+                            <td>3 validaciones</td>
+                            <td>f-string</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>3 — Cafetería</td>
+                            <td>for</td>
+                            <td>Con retorno</td>
+                            <td>4 validaciones</td>
+                            <td>.format()</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>4 — Ejercicio</td>
+                            <td>while</td>
+                            <td>void</td>
+                            <td>3 validaciones</td>
+                            <td>f-string</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección de Validaciones con Cuadrícula que contiene Bloque ,Título y su Lista de Validaciones -->
+            <div class="section-label" id="validaciones">Reglas de entrada</div>
+            <h2>Reglas de Validación</h2>
+            <div class="val-grid">
+                <div class="val-block">
+                    <h4>Examen 1 — Rifa</h4>
+                    <ul>
+                        <li>Calificaciones: rango 1 – 10</li>
+                        <li>Número de la suerte: rango 1 – 10</li>
+                        <li>Promedio requerido: ≥ 9.0</li>
+                    </ul>
+                </div>
+                <div class="val-block">
+                    <h4>Examen 2 — Inventario</h4>
+                    <ul>
+                        <li>Precio público: ≥ $0.50</li>
+                        <li>Costo del proveedor: ≥ $0.50</li>
+                        <li>Cantidad del producto: ≥ 1</li>
+                    </ul>
+                </div>
+                <div class="val-block">
+                    <h4>Examen 3 — Cafetería</h4>
+                    <ul>
+                        <li>Cantidad de café: ≥ 0</li>
+                        <li>Precio del café: ≥ $15.00</li>
+                        <li>Cantidad de postres: ≥ 0</li>
+                        <li>Precio de postres: ≥ $25.00</li>
+                    </ul>
+                </div>
+                <div class="val-block">
+                    <h4>Examen 4 — Ejercicio</h4>
+                    <ul>
+                        <li>Duración: > 0 minutos</li>
+                        <li>Calorías quemadas: > 0</li>
+                        <li>Tipo: "Cardio", "Fuerza" o "Resistencia"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección de Conceptos con Cuadrícula que contiene Bloque, Título y su Lista de Conceptos -->
+            <div class="section-label" id="conceptos">Objetivos de aprendizaje</div>
+            <h2>Conceptos Cubiertos</h2>
+            <div class="concepts-grid">
+                <div class="concept-block">
+                    <h4>Control de Bucles</h4>
+                    <ul>
+                        <li>Bucles while con condiciones</li>
+                        <li>Bucles for con range()</li>
+                        <li>Contadores y variables de control</li>
+                        <li>Salida de bucles con break</li>
+                    </ul>
+                </div>
+                <div class="concept-block">
+                    <h4>Validación de Entrada</h4>
+                    <ul>
+                        <li>Verificación de rangos numéricos</li>
+                        <li>Validación de cadenas de texto</li>
+                        <li>Solicitud repetida ante entrada inválida</li>
+                        <li>Conversión segura de tipos</li>
+                    </ul>
+                </div>
+                <div class="concept-block">
+                    <h4>Diseño de Funciones</h4>
+                    <ul>
+                        <li>Funciones con valores de retorno</li>
+                        <li>Funciones void (procedimientos)</li>
+                        <li>Paso de parámetros</li>
+                        <li>Documentación de funciones</li>
+                    </ul>
+                </div>
+                <div class="concept-block">
+                    <h4>Operaciones Matemáticas</h4>
+                    <ul>
+                        <li>Acumulación de sumas</li>
+                        <li>Cálculo de promedios</li>
+                        <li>Redondeo de decimales</li>
+                        <li>Cálculos de porcentajes</li>
+                    </ul>
+                </div>
+                <div class="concept-block">
+                    <h4>Formateo de Cadenas</h4>
+                    <ul>
+                        <li>Operador % (estilo antiguo)</li>
+                        <li>Método .format()</li>
+                        <li>F-strings (literales formateados)</li>
+                        <li>Técnicas de concatenación</li>
+                    </ul>
+                </div>
+                <div class="concept-block">
+                    <h4>Números Aleatorios</h4>
+                    <ul>
+                        <li>Uso de random.randint()</li>
+                        <li>Especificación de rangos</li>
+                        <li>Lógica de selección aleatoria</li>
+                        <li>Conceptos de probabilidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección de Requisitos y Ejecución con Pasos a Seguir que contienen Número de Paso y su Contenido -->
+            <div class="section-label" id="ejecucion">Cómo ejecutar</div>
+            <h2>Requisitos y Ejecución</h2>
+            <div class="run-steps">
+                <div class="run-step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Requisitos</h4>
+                        <p style="font-size:0.9rem;color:#444;">Se requiere <code>Python 3.x</code> instalado en el sistema. El módulo <code>random</code> forma parte de la librería estándar y no requiere instalación adicional.</p>
+                    </div>
+                </div>
+                    <div class="run-step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Clonar el repositorio</h4>
+                        <div class="code-block">
+                        <span class="cmd">git clone</span> https://github.com/TheNarratorVIMMXX/PythonBasicExams.git<br>
+                        <span class="cmd">cd</span> PythonBasicExams
+                        </div>
+                    </div>
+                </div>
+                <div class="run-step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Ejecutar un examen</h4>
+                        <div class="code-block">
+                        <span class="comment"># Rifa Escolar de Caridad</span><br>
+                        <span class="cmd">python</span> Examen_1.py<br><br>
+                        <span class="comment"># Gestión de Inventario de una Tienda</span><br>
+                        <span class="cmd">python</span> Examen_2.py<br><br>
+                        <span class="comment"># Control de Ventas de Cafetería</span><br>
+                        <span class="cmd">python</span> Examen_3.py<br><br>
+                        <span class="comment"># Rastreador Semanal de Ejercicios</span><br>
+                        <span class="cmd">python</span> Examen_4.py
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Pie de Página con Autor, Correo Electrónico y Información de Derechos -->
+        <footer>
+            <p><strong>Carlos Gabriel Magallanes López</strong></p>                                  
+            <p style="margin-top:6px;">
+                <a href="https://mail.google.com/mail/?view=cm&to=cgmagallanes23@gmail.com">cgmagallanes23@gmail.com</a> &nbsp;·&nbsp;
+                Colección de Exámenes Básicos de Python &nbsp;·&nbsp; Octubre 2025
+            </p>
+            <p style="margin-top:10px;font-size:11px;opacity:0.5;">Proyecto educativo · Libre para uso académico</p>
+        </footer>
+
+    </body>
+</html>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
