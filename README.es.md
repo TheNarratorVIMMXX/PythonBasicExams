@@ -181,15 +181,15 @@ módulo random (incluido en la librería estándar)
 1. **Clona este repositorio:**
 ```bash
 git clone https://github.com/TheNarratorVIMMXX/PythonBasicExams.git
-cd PythonBasicExams
+cd PythonBasicExams/src
 ```
 
 2. **Ejecuta cualquier examen:**
 ```bash
-python Examen_1.py  # Rifa Escolar de Caridad
-python Examen_2.py  # Gestión de Inventario de una Tienda
-python Examen_3.py  # Control de Ventas de Cafetería
-python Examen_4.py  # Rastreador Semanal de Ejercicios
+python exam_1.py  # Rifa Escolar de Caridad
+python exam_2.py  # Gestión de Inventario de una Tienda
+python exam_3.py  # Control de Ventas de Cafetería
+python exam_4.py  # Rastreador Semanal de Ejercicios
 ```
 
 ---
