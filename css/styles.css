@@ -690,6 +690,33 @@ footer a {
 /* Subrayado al pasar el cursor sobre los links dentro del pie de página para indicar interactividad */
 footer a:hover {text-decoration: underline;}
 
+/* Botón Flotante de Cambio de Idioma */
+#langToggleBtn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 200;
+    background: var(--navy);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 12px 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(13, 27, 42, 0.25);
+    transition: all 0.2s;
+}
+
+#langToggleBtn:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(13, 27, 42, 0.3);
+}
+
 /* Animación de Fade-In para elementos que aparecen al cargar la página */
 @keyframes fadeIn {
 
@@ -711,7 +738,14 @@ footer a:hover {text-decoration: underline;}
 
     .header-inner {padding: 40px 20px 36px;}                                                                                               /* Menos padding en el encabezado para pantallas pequeñas */
     main {padding: 0 20px 60px;}                                                                                                           /* Menos padding en el contenido principal para pantallas pequeñas */
-  
+    #langToggleBtn {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 14px;
+        font-size: 10px;
+    }
+
+    
 }
 
 /*****************************************************************************************************************************************************************************/
