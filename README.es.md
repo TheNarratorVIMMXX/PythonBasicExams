@@ -1,4 +1,13 @@
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+
 # 📝 Colección de Exámenes Básicos de Python
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
+![Type](https://img.shields.io/badge/Tipo-Educativo-8B008B?style=for-the-badge)
+![Exams](https://img.shields.io/badge/Exámenes-4-orange?style=for-the-badge)
+![Topics](https://img.shields.io/badge/Temas-Bucles_·_Funciones_·_Validación-green?style=for-the-badge)
+![License](https://img.shields.io/badge/Licencia-MIT-lightgrey?style=for-the-badge)
+![Version](https://img.shields.io/badge/Versión-1.0-gold?style=for-the-badge)
 
 Una colección de **4 exámenes fundamentales de programación en Python** que demuestran conceptos básicos de programación, incluyendo bucles, funciones, validación de entrada y procesamiento de datos.
 
@@ -6,15 +15,17 @@ Una colección de **4 exámenes fundamentales de programación en Python** que d
 
 ## 👨‍🎓 Información del Desarrollador
 
-- **Estudiante:** Magallanes López Carlos Gabriel
+- **Autor:** Magallanes López Carlos Gabriel
 - **Correo electrónico:** cgmagallanes23@gmail.com
-- **Fecha de desarrollo:** 22-27 de octubre de 2025
+- **Fecha de desarrollo:** 22–27 de octubre de 2025
 
 ---
 
 ## 📋 Contenido del Proyecto
 
 Este repositorio contiene 4 exámenes de Python con dificultad progresiva que cubren los fundamentos esenciales de la programación:
+
+---
 
 ### 📌 Examen 1: Rifa Escolar de Caridad
 **Fecha:** 22 de octubre de 2025
@@ -24,8 +35,8 @@ Un programa de rifa que selecciona a un ganador entre 5 participantes en funció
 **Características:**
 - Verificación de elegibilidad del estudiante (promedio mínimo de 9.0)
 - Generación y comparación de números aleatorios
-- Validación de calificaciones (rango 1-10)
-- Validación del número de la suerte (rango 1-10)
+- Validación de calificaciones (rango 1–10)
+- Validación del número de la suerte (rango 1–10)
 - Anuncio del ganador con concatenación de cadenas
 
 **Conceptos Cubiertos:**
@@ -107,51 +118,35 @@ Un programa de seguimiento físico que registra 3 sesiones de ejercicio y muestr
 
 Estos exámenes cubren de forma integral los conceptos fundamentales de programación en Python:
 
-- ✅ **Control de Bucles**: Bucles `while` y `for` con iteración correcta
-- ✅ **Lógica Condicional**: Sentencias `if-elif-else` y condiciones anidadas
-- ✅ **Validación de Entrada**: Verificación de datos con manejo de errores
-- ✅ **Funciones**: Funciones con retorno y funciones void
-- ✅ **Números Aleatorios**: Uso del módulo `random` para generación de números
-- ✅ **Formateo de Cadenas**: `%`, `.format()` y f-strings
-- ✅ **Operaciones Matemáticas**: Promedios, totales y redondeo
-- ✅ **Patrón Acumulador**: Seguimiento de sumas y conteos
-- ✅ **Conversión de Tipos**: `int()`, `float()`, `str()`
-- ✅ **Flujo de Control**: Sentencias `break` y contadores de bucle
+- ✅ **Control de Bucles:** Bucles `while` y `for` con iteración correcta
+- ✅ **Lógica Condicional:** Sentencias `if-elif-else` y condiciones anidadas
+- ✅ **Validación de Entrada:** Verificación de datos con manejo de errores
+- ✅ **Funciones:** Funciones con retorno y funciones void
+- ✅ **Números Aleatorios:** Uso del módulo `random` para generación de números
+- ✅ **Formateo de Cadenas:** `%`, `.format()` y f-strings
+- ✅ **Operaciones Matemáticas:** Promedios, totales y redondeo
+- ✅ **Patrón Acumulador:** Seguimiento de sumas y conteos
+- ✅ **Conversión de Tipos:** `int()`, `float()`, `str()`
+- ✅ **Flujo de Control:** Sentencias `break` y contadores de bucle
 
 ---
 
-## 📦 Requisitos
+## 📊 Tabla Comparativa de Exámenes
 
-```bash
-Python 3.x
-módulo random (incluido en la librería estándar)
-```
-
----
-
-## ▶️ Cómo Ejecutar
-
-1. **Clona este repositorio**:
-```bash
-git clone https://github.com/TheNarratorVIMMXX/PythonBasicExams.git
-cd PythonBasicExams
-```
-
-2. **Ejecuta cualquier examen**:
-```bash
-python Examen_1.py  # Rifa Escolar de Caridad
-python Examen_2.py  # Gestión de Inventario de una Tienda
-python Examen_3.py  # Control de Ventas de Cafetería
-python Examen_4.py  # Rastreador Semanal de Ejercicios
-```
+| Examen | Tipo de Bucle | Tipo de Función | Validaciones | Formato de Salida | Dificultad |
+|--------|---------------|-----------------|--------------|-------------------|------------|
+| 1 - Rifa | `while` + `break` | Ninguna | 4 validaciones | Operador `%` | ⭐⭐ |
+| 2 - Inventario | `for` | Con retorno | 3 validaciones | F-string | ⭐⭐⭐ |
+| 3 - Cafetería | `for` | Con retorno | 4 validaciones | `.format()` | ⭐⭐⭐ |
+| 4 - Ejercicio | `while` | void | 3 validaciones | F-string | ⭐⭐⭐⭐ |
 
 ---
 
 ## 🔍 Reglas de Validación
 
 ### Validaciones del Examen 1:
-- ✅ Calificaciones: Rango 1-10
-- ✅ Número de la suerte: Rango 1-10
+- ✅ Calificaciones: Rango 1–10
+- ✅ Número de la suerte: Rango 1–10
 - ✅ Promedio requerido: ≥ 9.0
 
 ### Validaciones del Examen 2:
@@ -169,6 +164,33 @@ python Examen_4.py  # Rastreador Semanal de Ejercicios
 - ✅ Duración del ejercicio: > 0 minutos
 - ✅ Calorías quemadas: > 0
 - ✅ Tipo de ejercicio: Debe ser "Cardio", "Fuerza" o "Resistencia"
+
+---
+
+## 📦 Requisitos
+
+```bash
+Python 3.11
+módulo random (incluido en la librería estándar)
+```
+
+---
+
+## ▶️ Cómo Ejecutar
+
+1. **Clona este repositorio:**
+```bash
+git clone https://github.com/TheNarratorVIMMXX/PythonBasicExams.git
+cd PythonBasicExams
+```
+
+2. **Ejecuta cualquier examen:**
+```bash
+python Examen_1.py  # Rifa Escolar de Caridad
+python Examen_2.py  # Gestión de Inventario de una Tienda
+python Examen_3.py  # Control de Ventas de Cafetería
+python Examen_4.py  # Rastreador Semanal de Ejercicios
+```
 
 ---
 
@@ -245,31 +267,18 @@ Esta colección sirve como recurso educativo para comprender los fundamentos de 
     - Recuperación elegante de errores
     - Manejo de casos límite
 
----
-
 ### 🎯 Habilidades Desarrolladas
 
 Al estudiar y practicar con estos exámenes, adquirirás experiencia práctica en:
 
-✅ **Programación iterativa** con bucles y contadores
-✅ **Validación de datos** y saneamiento de entradas
-✅ **Descomposición en funciones** para reutilización del código
-✅ **Resolución de problemas matemáticos** en programación
-✅ **Manipulación y formateo de cadenas**
-✅ **Pensamiento algorítmico** para lógica de negocio
+✅ **Programación iterativa** con bucles y contadores  
+✅ **Validación de datos** y saneamiento de entradas  
+✅ **Descomposición en funciones** para reutilización del código  
+✅ **Resolución de problemas matemáticos** en programación  
+✅ **Manipulación y formateo de cadenas**  
+✅ **Pensamiento algorítmico** para lógica de negocio  
 
 Este repositorio es ideal para estudiantes que aprenden los fundamentos de Python, que se preparan para exámenes de programación o para cualquier persona que quiera entender patrones esenciales de programación mediante ejercicios prácticos.
-
----
-
-## 📊 Tabla Comparativa de Exámenes
-
-| Examen | Tipo de Bucle | Tipo de Función | Validaciones | Formato de Salida | Dificultad |
-|--------|---------------|-----------------|--------------|-------------------|------------|
-| 1 - Rifa | `while` + `break` | Ninguna | 4 validaciones | Operador `%` | ⭐⭐ |
-| 2 - Inventario | `for` | Con retorno | 3 validaciones | F-string | ⭐⭐⭐ |
-| 3 - Cafetería | `for` | Con retorno | 4 validaciones | `.format()` | ⭐⭐⭐ |
-| 4 - Ejercicio | `while` | void | 3 validaciones | F-string | ⭐⭐⭐⭐ |
 
 ---
 
@@ -298,12 +307,6 @@ Este repositorio es ideal para estudiantes que aprenden los fundamentos de Pytho
 
 ---
 
-## 📄 Licencia
-
-Este proyecto tiene carácter educativo y está disponible de forma gratuita para fines de aprendizaje.
-
----
-
 ## 🤝 Contribuciones
 
 Estudiantes y docentes son bienvenidos a:
@@ -315,13 +318,19 @@ Estudiantes y docentes son bienvenidos a:
 
 ---
 
+## 📄 Licencia
+
+Este proyecto tiene carácter educativo y está disponible de forma gratuita para fines de aprendizaje.
+
+---
+
 ## 📧 Contacto
 
-**Carlos Gabriel Magallanes López**
+**Magallanes López Carlos Gabriel**  
 Correo electrónico: cgmagallanes23@gmail.com
 
 ---
 
-**⭐ ¡Si estos exámenes te ayudaron a aprender los fundamentos de Python, dale una estrella a este repositorio!**
+⭐ **¡Si estos exámenes te ayudaron a aprender los fundamentos de Python, dale una estrella a este repositorio!**
 
 **📖 ¡Feliz aprendizaje y mucho éxito en tus estudios!**
