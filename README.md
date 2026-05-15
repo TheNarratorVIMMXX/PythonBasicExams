@@ -181,15 +181,15 @@ random module (included in the standard library)
 1. **Clone this repository:**
 ```bash
 git clone https://github.com/TheNarratorVIMMXX/PythonBasicExams.git
-cd PythonBasicExams
+cd PythonBasicExams/src
 ```
 
 2. **Run any exam:**
 ```bash
-python Examen_1.py  # School Charity Raffle
-python Examen_2.py  # Store Inventory Management
-python Examen_3.py  # Cafeteria Sales Control
-python Examen_4.py  # Weekly Exercise Tracker
+python exam_1.py  # School Charity Raffle
+python exam_2.py  # Store Inventory Management
+python exam_3.py  # Cafeteria Sales Control
+python exam_4.py  # Weekly Exercise Tracker
 ```
 
 ---
